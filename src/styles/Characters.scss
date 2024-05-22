@@ -1,0 +1,21 @@
+.characters{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.character__card{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    img {
+        width: 100%;
+    }
+    span{
+        padding: 0.3rem 1.2rem;
+    }
+}
