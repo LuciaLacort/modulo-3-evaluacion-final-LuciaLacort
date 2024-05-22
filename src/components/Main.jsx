@@ -1,8 +1,6 @@
 import CharacterList from "./CharacterList";
-
 import Filters from "./Filters";
 
-import React from 'react'
 
 const Main = ({characters}) => {
   return (

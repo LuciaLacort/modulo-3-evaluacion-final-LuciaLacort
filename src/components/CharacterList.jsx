@@ -1,4 +1,4 @@
-import React from 'react'
+
 import CharacterCard from './CharacterCard'
 const CharacterList = ({characters}) => {
 
