@@ -6,7 +6,7 @@ const CharacterList = ({characters}) => {
   )
   return (
     <section className='characters'>
-      {characters.length === 0 ? <h2>No hay personajes que coincidan con la palabra introducida</h2> : null}
+      {characters.length === 0 ? <h2>No hay personajes que coincidan con la búsqueda</h2> : null}
       {characterList}   
     </section>
   )

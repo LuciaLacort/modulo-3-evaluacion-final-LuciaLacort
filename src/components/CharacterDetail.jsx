@@ -9,16 +9,19 @@ const CharacterDetail = ({ characterDetail }) => {
   const speciesEmoji = characterDetail.species === "Human" ? "🧑🏻‍🦳" : "👽";
 
   return (
-    <div className="character-detail">
-      <h2>{characterDetail.name}</h2>
-      <img 
-        src={characterDetail.image} 
-        alt={`foto del personaje: ${characterDetail.name}`} 
-      />
-      <p>Species: {speciesEmoji}</p>
-      <p>Status: {statusEmoji}</p>
-      <p>Origin: {characterDetail.origin}</p>
-      <Link to="/"> Volver al listado de personajes</Link>
+
+    <div>
+      <Link to="/"> Volver </Link>
+      <div className="character-detail">
+        <h2>{characterDetail.name}</h2>
+        <img 
+          src={characterDetail.image} 
+          alt={`Foto del personaje: ${characterDetail.name}`} 
+        />
+        <p>Species: {speciesEmoji}</p>
+        <p>Status: {statusEmoji}</p>
+        <p>Origin: {characterDetail.origin}</p>
+    </div>
     </div>
 
   );

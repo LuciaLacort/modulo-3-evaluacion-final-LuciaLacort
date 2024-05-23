@@ -18,6 +18,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
   const [input, setInput] = useState("")
+  const [genderFilter, setGenderFilter] = useState("")
 
   useEffect(() => {
     getDataApi().then((newArray) => { 
@@ -31,8 +32,9 @@ function App() {
     console.log(value);
   }
   const filteredCharacters = characters.filter(character =>
-    character.name.toLowerCase().includes(nameFilter.toLowerCase())
-  );
+    character.name.toLowerCase().includes(nameFilter.toLowerCase()) &&
+    (genderFilter ? genderFilter === character.gender : true)
+);
 
 
   const { pathname } = useLocation()
@@ -45,7 +47,7 @@ function App() {
     <>
      <Header/>
      <Routes>
-       <Route path="/" element={<Main characters={filteredCharacters} handleFilter={handleFilter} input={input} setInput={setInput} />}/>
+       <Route path="/" element={<Main genderFilter={genderFilter} setGenderFilter={setGenderFilter} characters={filteredCharacters} handleFilter={handleFilter} input={input} setInput={setInput} />}/>
        <Route path="/characterDetail/:id" element={<CharacterDetail characterDetail={characterDetail} />} />
        <Route path="*" element={<NotFound/>} />
 

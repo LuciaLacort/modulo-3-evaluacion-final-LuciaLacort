@@ -10,7 +10,8 @@ const getDataFromAPi = () => {
             status: user.status,
             species: user.species,
             origin: user.origin.name,
-            episodes: user.episode.length
+            episodes: user.episode.length,
+            gender: user.gender,
           };
         });
         return newArray;
