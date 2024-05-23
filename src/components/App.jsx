@@ -29,7 +29,6 @@ function App() {
 
   const handleFilter = (value) => {
     setNameFilter(value);
-    console.log(value);
   }
   const filteredCharacters = characters.filter(character =>
     character.name.toLowerCase().includes(nameFilter.toLowerCase()) &&
@@ -41,7 +40,6 @@ function App() {
   const charRoute = matchPath("/characterDetail/:id", pathname)
   const characterIdUrl = charRoute ? charRoute.params.id : null;
   const characterDetail = characters.find(character => character.id === parseInt(characterIdUrl, 10));
-  console.log(characterDetail);
 
   return (
     <>

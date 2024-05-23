@@ -1,0 +1,17 @@
+.notfound {
+    height: 100vh;
+    background-color: black;
+    color: #00B2CA;
+    padding: 8rem;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: greenyellow;
+    }
+}

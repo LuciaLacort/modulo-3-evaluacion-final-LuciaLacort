@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     padding-top: 3rem;
+    gap:2rem;
     padding-bottom: 0.5rem;
     &__label{
         color: greenyellow;
@@ -20,4 +21,9 @@
 
 .message{
     color: white;
+}
+
+.select{
+    background-color: black;
+    color: greenyellow;
 }
