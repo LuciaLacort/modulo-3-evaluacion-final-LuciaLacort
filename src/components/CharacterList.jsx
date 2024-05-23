@@ -1,5 +1,6 @@
 
 import CharacterCard from './CharacterCard'
+import PropTypes from 'prop-types';
 const CharacterList = ({characters}) => {
 
   const characterList = characters.map(character =><CharacterCard key={character.id} data={character}/>
@@ -10,6 +11,18 @@ const CharacterList = ({characters}) => {
       {characterList}   
     </section>
   )
+  
 }
+CharacterList.propTypes = {
+  characters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      species: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
+
 
 export default CharacterList

@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Filters = ({handleFilter, input, setInput, genderFilter, setGenderFilter}) => {
 
@@ -31,5 +31,14 @@ const Filters = ({handleFilter, input, setInput, genderFilter, setGenderFilter})
     </form>
   )
 }
+
+Filters.propTypes = {
+  handleFilter: PropTypes.func.isRequired,
+  input: PropTypes.string.isRequired,
+  setInput: PropTypes.func.isRequired,
+  genderFilter: PropTypes.string.isRequired,
+  setGenderFilter: PropTypes.func.isRequired
+};
+
 
 export default Filters

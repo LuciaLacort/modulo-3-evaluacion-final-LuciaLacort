@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types';
+
 
 const CharacterCard = ({data}) => {
   return (
@@ -12,4 +14,14 @@ const CharacterCard = ({data}) => {
   )
 }
 
-export default CharacterCard
+CharacterCard.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    species: PropTypes.string.isRequired
+  }).isRequired
+};
+
+export default CharacterCard;
+
