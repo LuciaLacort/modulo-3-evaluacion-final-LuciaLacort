@@ -4,6 +4,10 @@
     justify-content: center;
     padding-top: 3rem;
     padding-bottom: 0.5rem;
+    &__label{
+        color: greenyellow;
+        padding-right: 1rem;
+    }
 }
 
 .input{
@@ -12,4 +16,8 @@
     width: 20rem;
     height: 2rem;
     color: greenyellow;
+}
+
+.message{
+    color: white;
 }
