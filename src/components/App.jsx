@@ -14,7 +14,6 @@ import { Routes, Route, matchPath, useLocation } from "react-router-dom";
 
 function App() {
 
-
   const [characters, setCharacters] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
   const [input, setInput] = useState("")
@@ -35,7 +34,6 @@ function App() {
     (genderFilter ? genderFilter === character.gender : true)
 );
 
-
   const { pathname } = useLocation()
   const charRoute = matchPath("/characterDetail/:id", pathname)
   const characterIdUrl = charRoute ? charRoute.params.id : null;
@@ -48,7 +46,6 @@ function App() {
        <Route path="/" element={<Main genderFilter={genderFilter} setGenderFilter={setGenderFilter} characters={filteredCharacters} handleFilter={handleFilter} input={input} setInput={setInput} />}/>
        <Route path="/characterDetail/:id" element={<CharacterDetail characterDetail={characterDetail} />} />
        <Route path="*" element={<NotFound/>} />
-
      </Routes>
     </>
   )

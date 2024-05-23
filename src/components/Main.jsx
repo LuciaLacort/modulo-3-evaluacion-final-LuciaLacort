@@ -2,7 +2,7 @@ import CharacterList from "./CharacterList";
 import Filters from "./Filters";
 
 
-const Main = ({characters, handleFilter, input, setInput, genderFilter, setGenderFilter}) => {
+const Main = ({characters, handleFilter, input, setInput, genderFilter, setGenderFilter,}) => {
   
   return (
     <main>

@@ -10,11 +10,9 @@ const Filters = ({handleFilter, input, setInput, genderFilter, setGenderFilter})
     const handleSubmit = (event) => {
       event.preventDefault();
     };
-
     const handleChange = (ev) => {
       setGenderFilter(ev.target.value)
   }
-
 
   return (
     <form  className='form' onSubmit={handleSubmit}>
