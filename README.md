@@ -1,8 +1,8 @@
 
-# Rick & Morty Characters
+# Harry Potter Characters
 
 
-This awesome app allows you to search for your favorite characters from the series Rick and Morty. 
+This awesome app allows you to search for your favorite characters from Harry Potter. 
 
 You can filter by typing the character's name into the search field or select any other available search option. 
 
