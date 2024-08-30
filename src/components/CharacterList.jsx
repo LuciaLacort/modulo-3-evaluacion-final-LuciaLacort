@@ -2,8 +2,9 @@
 import CharacterCard from './CharacterCard'
 import PropTypes from 'prop-types';
 const CharacterList = ({characters}) => {
+  const filteredCharacters = characters.filter(character => character.image && character.image !== 'Unknown');
 
-  const characterList = characters.map(character =><CharacterCard key={character.id} data={character}/>
+  const characterList = filteredCharacters.map(character =><CharacterCard key={character.id} data={character}/>
   )
   return (
     <section className='characters'>
@@ -16,10 +17,10 @@ const CharacterList = ({characters}) => {
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      species: PropTypes.string.isRequired
+      ancestry: PropTypes.string.isRequired
     })
   ).isRequired
 };

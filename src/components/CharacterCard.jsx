@@ -8,7 +8,7 @@ const CharacterCard = ({data}) => {
       <Link className='character__card' to={`/characterDetail/${data.id}`}>
         <img src={data.image} alt={`Foto del personaje: ${data.name}`}  />
         <span>{data.name}</span>
-        <span>{data.species}</span>
+        <span>{data.ancestry}</span>
       </Link>
     </article>
   )
@@ -16,10 +16,10 @@ const CharacterCard = ({data}) => {
 
 CharacterCard.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    species: PropTypes.string.isRequired
+    ancestry: PropTypes.string.isRequired
   }).isRequired
 };
 

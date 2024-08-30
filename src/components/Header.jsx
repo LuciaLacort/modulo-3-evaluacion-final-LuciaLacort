@@ -1,5 +1,5 @@
 
-import title from '../images/title.png'
+import title from '../images/title.avif'
 
 const Header = () => {
   return (

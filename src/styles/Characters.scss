@@ -1,5 +1,5 @@
 .characters{
-    background-color: black;
+    background-color: burlywood;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,7 +11,7 @@
 .character__card{
     display: flex;
     flex-direction: column;
-    background-color:#00B2CA;
+    background-color:black;
     text-decoration: none;
     color: white;
     img {
@@ -33,11 +33,11 @@
         width: 40rem;
         display:grid;
         grid-template-columns: 1fr 1fr;
-        background-color:#00B2CA ;
-        color: white;
+        background-color:wheat ;
+        color: black;
     }
     &__img{
-        width:50%;
+        width:25rem;
         img{
             padding: 3rem;
         }

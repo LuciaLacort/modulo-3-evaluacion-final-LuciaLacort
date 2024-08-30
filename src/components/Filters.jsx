@@ -24,8 +24,6 @@ const Filters = ({handleFilter, input, setInput, genderFilter, setGenderFilter})
                 <option value="">Seleccione</option>
                 <option value="Female">Mujer</option>
                 <option value="Male">Hombre</option>
-                <option value="Genderless">Sin género</option>
-                <option value="unknown">Desconocido</option>
             </select>
         </div>
     </form>

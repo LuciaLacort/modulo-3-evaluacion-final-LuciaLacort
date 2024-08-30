@@ -37,7 +37,7 @@ function App() {
   const { pathname } = useLocation()
   const charRoute = matchPath("/characterDetail/:id", pathname)
   const characterIdUrl = charRoute ? charRoute.params.id : null;
-  const characterDetail = characters.find(character => character.id === parseInt(characterIdUrl, 10));
+  const characterDetail = characters.find(character => character.id === characterIdUrl);
 
   return (
     <>

@@ -1,9 +1,12 @@
 .header{
     width: 100%;
-    background-color: black;
+    // background-color: black;
+
+    background-size: cover;
     display: flex;
     justify-content: center;
 &__title{
-    width: 30rem;
+    // width: 30rem;
+    background-image: url(../images/title.avif);
 }
 }
