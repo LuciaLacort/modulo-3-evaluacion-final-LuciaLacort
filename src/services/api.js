@@ -8,7 +8,7 @@ const getDataFromAPi = () => {
             name: user.name,
             image: user.image,
             alive: user.alive,
-            ancestry: user.ancestry,
+            ancestry: user.ancestry || 'Unknown',
             origin: user.house || 'Unknown', //origin.name
             episodes: user.actor || 'Unknown', //episode
             gender: user.gender,

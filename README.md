@@ -15,8 +15,8 @@ Remember to use it on your computer, as it’s a desktop app. Have fun!
 
 ## 🛠 Tools
 
-
 [![My Skills](https://skillicons.dev/icons?i=js,html,sass,vite,react,git)](https://skillicons.dev)
+
 ## 💻 Installation
 
 Clone the repository.
