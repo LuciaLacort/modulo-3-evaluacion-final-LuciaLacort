@@ -19,11 +19,11 @@ const Filters = ({handleFilter, input, setInput, genderFilter, setGenderFilter})
       <label className='form__label' htmlFor="input">Introduce el nombre de un personaje</label>
      <input className='input' id="input" type='text' value={input} onChange={handleInput}/>
         <div>
-            <label className='form__label' htmlFor="input"> Filtrar por género</label>
-            <select className='select' onChange={handleChange} value={genderFilter} >
+            <label className='form__label' htmlFor="select"> Filtrar por género</label>
+            <select className='select' id="select"onChange={handleChange} value={genderFilter} >
                 <option value="">Seleccione</option>
-                <option value="Female">Mujer</option>
-                <option value="Male">Hombre</option>
+                <option value="female">Mujer</option>
+                <option value="male">Hombre</option>
             </select>
         </div>
     </form>

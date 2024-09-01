@@ -1,6 +1,7 @@
 
 import CharacterCard from './CharacterCard'
 import PropTypes from 'prop-types';
+
 const CharacterList = ({characters}) => {
   const filteredCharacters = characters.filter(character => character.image && character.image !== 'Unknown');
 
