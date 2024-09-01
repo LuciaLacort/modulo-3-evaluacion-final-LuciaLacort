@@ -8,7 +8,6 @@ const CharacterCard = ({data}) => {
       <Link className='character__card' to={`/characterDetail/${data.id}`}>
         <img src={data.image} alt={`Foto del personaje: ${data.name}`}  />
         <span>Name:  {data.name}</span>
-        <span>Ancestry: { data.ancestry}</span>
       </Link>
     </article>
   )

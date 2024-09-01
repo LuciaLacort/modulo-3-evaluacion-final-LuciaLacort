@@ -1,5 +1,5 @@
 .form{
-    background-color: rgb(161, 99, 18);
+    background-color:  #2e2421 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     padding: 1rem;
     font-size: 1rem;
     &__label{
-        color: black;
+        color:#93BFC6;
         padding-right: 1rem;
     }
     @media (min-width: 768px){
@@ -19,11 +19,11 @@
 }
 
 .input{
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid #2e2421;
+    background-color:  #f2aa7a;
     width: 20rem;
     height: 2rem;
-    color: black;
+    color:#2e2421;
 }
 
 .message{
@@ -31,9 +31,10 @@
 }
 
 .select{
-    background-color: wheat;
-    color: black;
+    background-color:  #f2aa7a;
+    color:#2e2421;
     font-size: 1rem;
+    border-radius: 0.5rem;
     @media (min-width: 768px){
         font-size: 2rem;
             
